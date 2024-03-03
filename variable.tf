@@ -13,7 +13,7 @@ variable "eks_cluster_version" {
 variable "ec2_key_pair" {
   # 이벤트 엔진에서 기본 제공되는 Key Pair 사용
   # default = "ee-default-keypair"
-  default = "eks-ssh-key"
+  default = "sgp-eks-ssh-key"
 }
 
 variable "worker_node_instance_type" {
@@ -23,20 +23,20 @@ variable "worker_node_instance_type" {
 }
 
 variable "worker_node_min_size" {
-  default = 3
+  default = 4
 }
 
 variable "worker_node_max_size" {
-  default = 5
+  default = 4
 }
 
 variable "worker_node_desired_size" {
-  default = 3
+  default = 8
 }
 
 variable "aws_region" {
 # variable "AWS_DEFAULT_REGION" {
-  default = "ap-northeast-2"
+  default = "ap-southeast-1"
   # default = "us-east-1"
 }
 
@@ -45,12 +45,12 @@ variable "var_vpc_cidr" {
 }
 
 variable "var_subnet_1_az" {
-  default = "ap-northeast-2a"
+  default = "ap-southeast-1a"
   # default = "us-east-1a"
 }
 
 variable "var_subnet_2_az" {
-  default = "ap-northeast-2c"
+  default = "ap-southeast-1c"
   # default = "us-east-1c"
 }
 
