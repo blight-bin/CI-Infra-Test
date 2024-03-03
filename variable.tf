@@ -45,12 +45,12 @@ variable "var_vpc_cidr" {
 }
 
 variable "var_subnet_1_az" {
-  default = "eu-west-2"
+  default = "eu-west-2a"
   # default = "us-east-1a"
 }
 
 variable "var_subnet_2_az" {
-  default = "eu-west-2"
+  default = "eu-west-2c"
   # default = "us-east-1c"
 }
 
