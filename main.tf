@@ -4,7 +4,7 @@ terraform {
     organization = "hyungwook"
     
     workspaces {
-      name = "dev-eks"
+      name = "CI-Infra-Test-bin"
     }
   }
 }
